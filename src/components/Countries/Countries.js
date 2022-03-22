@@ -4,8 +4,10 @@ import './Countries.css'
 
 const Countries = () => {
 
+    //state managing
     const [countries, setCountries] = useState([]);
 
+    //fetch data from RESTful API
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
             .then(res => res.json())
